@@ -75,7 +75,7 @@ const routes = [
     name: "Inserir Madeira",
     key: "inserirItem",
     route: "/inserirItem",
-    icon: <Settings size="16px" />,
+    icon: <Cube size="16px" />,
     component: <Inserir />,
     noCollapse: true,
   },
