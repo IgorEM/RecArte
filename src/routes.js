@@ -38,11 +38,11 @@ Coded by www.creative-tim.com
 // Soft UI Dashboard React layouts
 import Home from "layouts/home";
 import Inserir from "layouts/inserirItem"
+
 import Itens from "layouts/itens";
 import ItensY from "layouts/itensY";
-import Billing from "layouts/billing";
-//import VirtualReality from "layouts/virtual-reality";
-//import RTL from "layouts/rtl";
+import ItensX from "layouts/itensX";
+
 import Perfil from "layouts/perfil";
 import PerfilEmpresa from "layouts/perfilEmpresa";
 import SignIn from "layouts/authentication/sign-in";
@@ -51,13 +51,12 @@ import SignUp from "layouts/authentication/sign-up";
 // Soft UI Dashboard React icons
 import Shop from "examples/Icons/Shop";
 import Office from "examples/Icons/Office";
-import Settings from "examples/Icons/Settings";
+// eslint-disable-next-line no-unused-vars
+
 import Document from "examples/Icons/Document";
 import SpaceShip from "examples/Icons/SpaceShip";
 import CustomerSupport from "examples/Icons/CustomerSupport";
-import CreditCard from "examples/Icons/CreditCard";
 import Cube from "examples/Icons/Cube";
-import Basket from "examples/Icons/Basket";
 
 
 const routes = [
@@ -79,23 +78,32 @@ const routes = [
     component: <Inserir />,
     noCollapse: true,
   },
-  { //descriçao do item madereira x
-    // type: "collapse",
+  { 
+    //type: "collapse",
     name: "Itens",
     key: "itens",
     route: "/itens",
-    icon: <Cube size="16px" />,
+    icon: <Office size="16px" />,
     component: <Itens />,
-    // noCollapse: true,
+    //noCollapse: true,
+  },
+  { //descriçao do item madereira X
+    //type: "collapse",
+    name: "ItensX",
+    key: "itensX",
+    route: "/itensX",
+    icon: <Office size="16px" />,
+    component: <ItensX />,
+    noCollapse: true,
   },
   {//descriçao do item madereira Y
-    // type: "collapse",
+    //type: "collapse",
     name: "ItensY",
     key: "itensY",
     route: "/itensY",
-    // icon: <Office size="12px" />,
+    icon: <Office size="16px" />,
     component: <ItensY />,
-    // noCollapse: true,
+    noCollapse: true,
 
   },
   { type: "title", title: "página da conta", key: "account-pages" },

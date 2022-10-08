@@ -8,7 +8,7 @@ import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 
 
 
-import pinus6 from "../../imagens/pinus6.jpg";
+import pinus3 from "../../imagens/pinus3.jpg";
 
 import Descricao from "../../examples/Cards/StatisticsCards/Descricao/Descricao";
 
@@ -22,12 +22,12 @@ function Itens() {
       <DashboardNavbar />
       <SoftBox py={3}>
           <Descricao 
-              imagem={pinus6} 
-              titulo="Madereireira Y"
+              imagem={pinus3} 
+              titulo="Madereireira X"
               endereco="Endereço" 
               tipo="Pinus " 
-              distancia=" 10 KM" 
-              comprimento="4x3x2"/>
+              distancia=" 5 KM" 
+              comprimento="3x4x2"/>
               
       </SoftBox>
       
